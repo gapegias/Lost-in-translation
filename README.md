@@ -70,7 +70,7 @@ here: https://github.com/dewald-els/noroff-assignment-api/blob/master/docs/lost-
 - this should “delete” in your API and no longer display on the profile page 
 - add a message that user will lose history
 
-<img src="/pictures/profile_page_click_history%20button_result.PNG">
+<img src="/pictures/profile_page_click_history%20button.PNG">
 
 Before translate "hello"
 
