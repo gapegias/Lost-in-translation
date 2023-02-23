@@ -30,7 +30,7 @@ const TranslationPage = () => {
     // When 'submit' button clicked, take the word and traslate in images
     const onSubmit = async ({ word })  => {
         const images = []
-        const letters = /^[A-Za-zκ]*$/
+        const letters = /^[A-Za-z\s]*$/
         if(word.match(letters)){
             let index = 0;
             let trimFromExtraSpaces = word.split(' ')
@@ -39,9 +39,16 @@ const TranslationPage = () => {
                                           .replaceAll(' ', '@')
             for(const letter of trimFromExtraSpaces){
                 index++
-                images.push(<img src={"Images/individial_signs/" + letter.toLowerCase() + ".png"} 
+                if(letter === '@'){
+                    images.push(<img src={"Images/individial_signs/space.png"} 
                                  alt={letter + ".png"} 
                                  key={index}/>)
+                }
+                else{
+                   images.push(<img src={"Images/individial_signs/" + letter.toLowerCase() + ".png"} 
+                                    alt={letter + ".png"} 
+                                    key={index}/>)
+                }
             }
             setTranslateWord(images)
             const [ error, updatedUser ] = await translationAdd(user, word)
