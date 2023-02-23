@@ -54,11 +54,12 @@ to the Translation page
 <img src="/pictures/translation_page_empty_word.png">
 
 - box to trigger the translation
-- translations must be stored using the API (See Required features for more information 
+- translations must be stored using the API (See Required features for more information here: 
 
-here: https://github.com/dewald-els/noroff-assignment-api/blob/master/docs/lost-in-translation.md) 
+  https://github.com/dewald-els/noroff-assignment-api/blob/master/docs/lost-in-translation.md) 
 - sign language characters must appear in the “translated” box
 - check that it did not type special characters or numbers 
+
  (except space and will return one space)
 
 ### **3. Profile page**
