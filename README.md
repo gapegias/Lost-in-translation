@@ -17,7 +17,7 @@ Make sure you have the following tools available:
 
 ## **Requirements for the sign language translator**
 
-### **1. Startup / Login Page**
+## **1. Startup / Login Page**
 
 <img src="/pictures/start_up_page.png">
 
@@ -35,7 +35,7 @@ The first thing a user should see is the “Login page” where:
 to the Translation page 
 - use the browsers’ local storage to manage the session
 
-### **2. Translation Page**
+## **2. Translation Page**
 
 <img src="/pictures/translation_page.png">
 
@@ -62,7 +62,7 @@ to the Translation page
   
   (except space and will return one space)
 
-### **3. Profile page**
+## **3. Profile page**
 
 <img src="/pictures/profile_page.PNG"> 
 
