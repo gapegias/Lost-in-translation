@@ -18,8 +18,15 @@ Make sure you have the following tools available:
 ## **Requirements for the sign language translator**
 
 ### **1. Startup / Login Page**
+
+<img src="/pictures/start_up_page.png">
+
 The first thing a user should see is the “Login page” where: 
 - the user must be able to enter their name 
+- username can not be empty, a message should view
+
+<img src="/pictures/start_up_page_empty_name.png">
+
 - the username have to be saved to the Translation API 
 - remember to first check if the user exists
 - if user not exists create this user and store in the API 
@@ -29,11 +36,23 @@ to the Translation page
 - use the browsers’ local storage to manage the session
 
 ### **2. Translation Page**
+
+<img src="/pictures/translation_page.png">
+
 - a user may only view this page if they are currently logged into the app 
 - redirect a user back to the login page if no active login session exists in the browser storage
-- 
 - user types in the input box at the top of the page 
+
+<img src="/pictures/translation_page_click_translate.PNG">
+
 - user must click on the “translate” button to the right of the input 
+
+<img src="/pictures/translation_page_click_translate_result.PNG">
+
+- text can not be empty, a message should view
+
+<img src="/pictures/translation_page_empty_word.png">
+
 - box to trigger the translation
 - translations must be stored using the API (See Required features for more information 
 
@@ -42,8 +61,26 @@ here: https://github.com/dewald-els/noroff-assignment-api/blob/master/docs/lost-
 - check that it did not type special characters, spaces or numbers
 
 ### **3. Profile page**
+
+<img src="/pictures/profile_page.PNG"> 
+
 - the profile page must display the last 10 translations for the current user 
 - display only the text of the translation 
 - have also to be a button to clear the translations 
 - this should “delete” in your API and no longer display on the profile page 
-- the Logout button should clear all the storage and return to the start page.
+- add a message that user will lose history
+
+<img src="/pictures/profile_page_click_history%20button_result.PNG">
+
+Before translate "hello"
+
+<img src="/pictures/profile_page_after_click_translate.PNG">
+
+After translate "hello"
+
+<img src="/pictures/profile_page_click_history%20button_result.PNG">
+
+- the Logout button should clear all the storage and return to the start page
+- add a message that user is sure that wants to leave
+
+<img src="/pictures/logout_button_dialog.png">
