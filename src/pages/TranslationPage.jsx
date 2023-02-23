@@ -36,10 +36,9 @@ const TranslationPage = () => {
             let trimFromExtraSpaces = word.split(' ')
                                           .filter(letter => letter !== '')
                                           .join(' ')
-                                          .replaceAll(' ', '@')
             for(const letter of trimFromExtraSpaces){
                 index++
-                if(letter === '@'){
+                if(letter === ' '){
                     images.push(<img src={"Images/individial_signs/space.png"} 
                                  alt={letter + ".png"} 
                                  key={index}/>)
