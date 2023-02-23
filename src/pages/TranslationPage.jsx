@@ -30,15 +30,13 @@ const TranslationPage = () => {
     // When 'submit' button clicked, take the word and traslate in images
     const onSubmit = async ({ word })  => {
         const images = []
-        const letters = /^[A-Za-z\s]*$/
-        //const letters = /^[A-Za-z]+$/;
+        const letters = /^[A-Za-zκ]*$/
         if(word.match(letters)){
             let index = 0;
             let trimFromExtraSpaces = word.split(' ')
                                           .filter(letter => letter !== '')
                                           .join(' ')
                                           .replaceAll(' ', '@')
-            console.log(trimFromExtraSpaces);
             for(const letter of trimFromExtraSpaces){
                 index++
                 images.push(<img src={"Images/individial_signs/" + letter.toLowerCase() + ".png"} 
