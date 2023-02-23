@@ -1,6 +1,4 @@
-# Create a Sign Language Translator using React
-
-## **Lost in Translation - Idea**
+# **Lost in Translation - Idea**
 Build an online sign language translator as a Single Page Application using the React framework.
 
 See website here: https://lost-in-translation-ae1o-ni8rofafg-gapegias.vercel.app
