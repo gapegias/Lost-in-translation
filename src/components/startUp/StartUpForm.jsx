@@ -24,7 +24,7 @@ const StartUpForm = () => {
     // Side effect
     useEffect( () => {
         if(user !== null)
-            navigate('/profile')
+            navigate('/translation')
     }, [user, navigate])
     /* Object for demonstrate errors:
         - no message for no errors

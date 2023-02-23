@@ -3,9 +3,9 @@ import { Navigate } from "react-router-dom";
 
 /* If user not specified:
     - true, navigate to start up page
-    - falser, navigate another component 
+    - false, navigate another component 
       (if you see other files will see that 
-       it will be navigate to "/profile" page) */
+       it will be navigate to "/translation" page) */
 const withAuth = Component => props => {
     const { user } = useUser()
     if(user !== null)
