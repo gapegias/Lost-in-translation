@@ -1,0 +1,47 @@
+.ProfileComponents td img{
+    height: 250px;
+    width: 250px;
+}
+
+.ProfileComponents img{
+    height: 25px;
+    width: 25px;
+}
+
+.ProfileComponents table{
+    padding: 2% 0% 0% 0%;
+}
+
+.ProfileComponents label{
+    font-size: 50px;
+}
+
+.ProfileComponents input, button{
+    font-size: 30px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+.ProfileComponents ol{
+    text-align: center;
+    padding-left: 45%;
+}
+
+.ProfileComponents li{
+    text-align: left;
+    padding: 2% 0% 0% 2%;
+}
+
+.ProfileComponents button{
+    border-radius: 25px;
+    background-color: forestgreen;
+    color: aliceblue;
+    margin-left: 1%;
+    font-size: 25px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+.ProfileComponents button:hover{
+    border-radius: 25px;
+    background-color:firebrick;
+    color: aliceblue;
+}

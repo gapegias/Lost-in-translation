@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  background-color:sandybrown;
+  color: aliceblue;
+}
+
+.App header{
+  text-align: left;
+  padding: 1% 0px 1% 27%;
+  font-size: 30px;
+}
+
+.App nav ul{
+  border-top: 3px solid #660033;
+  border-right: 3px solid #660033;
+  border-left: 3px solid #660033;
+  margin: 0%;
+  text-align: center;
+}
+
+.App nav li{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  padding: 1% 0px 1% 2%;
+}
+
+.App nav a{
+  color:white
+}
+
+.App nav a:hover{
+  color:firebrick
+}
+
+.App img{
+  height: 25px;
+  width: 25px;
+}

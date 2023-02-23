@@ -1,0 +1,30 @@
+.StartUpForm td img{
+    height: 180px;
+    width: 180px;
+}
+
+.StartUpForm img{
+    height: 25px;
+    width: 25px;
+}
+
+.StartUpForm table{
+    padding: 2% 0% 2% 0%;
+}
+
+.StartUpForm label{
+    font-size: 50px;
+}
+
+.StartUpForm input, button{
+    font-size: 30px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+.StartUpForm input{
+    background-image: url("/public/Images/keyboardIcon.png");
+    padding-left: 6%;
+    background-size: 12%;
+    background-repeat: no-repeat;
+}
+
