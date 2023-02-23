@@ -2,7 +2,7 @@
 ## **Idea**
 Build an online sign language translator as a Single Page Application using the React framework.
 The application will have one main feature to act as a “translator” from regular text to sign 
-language. The application must be able to translate English words and **short sentences** to 
+language. The application must be able to translate English words and short sentences to 
 American sign language. The images for the sign language will be provided.
 
 See website here: https://lost-in-translation-ae1o-ni8rofafg-gapegias.vercel.app
@@ -58,7 +58,8 @@ to the Translation page
 
 here: https://github.com/dewald-els/noroff-assignment-api/blob/master/docs/lost-in-translation.md) 
 - sign language characters must appear in the “translated” box
-- check that it did not type special characters, spaces or numbers
+- check that it did not type special characters or numbers 
+ (except space and will return one space)
 
 ### **3. Profile page**
 
