@@ -5,7 +5,7 @@ The application will have one main feature to act as a “translator” from reg
 language. The application must be able to translate English words and short sentences to 
 American sign language. The images for the sign language will be provided.
 
-See website here: https://lost-in-translation-ae1o-7fk71m9w0-gapegias.vercel.app
+See website here: https://lost-in-translation-ae1o.vercel.app
 
 ## **Set up the development environment**
 Make sure you have the following tools available:
