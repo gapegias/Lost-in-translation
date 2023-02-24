@@ -9,7 +9,7 @@ const NavBar = () => {
     /* Return of this file is header to each page. So it checks if user is null:
         - true, show only page title
         - false, show navigation bar */
-    let  visibility = user !== null ? "inline-block" : "none"
+    let visibility = user !== null ? "inline-block" : "none"
     /* By clicking "logout" button:
         - set user object null, so to redirect to start up page
         - delete current user from local storage */
@@ -19,6 +19,7 @@ const NavBar = () => {
             storageDelete(STORAGE_KEY_USER)
         }
     }
+    let name = user !== null ? user.username : ""
 
     return (
       <nav>
@@ -29,9 +30,14 @@ const NavBar = () => {
               <li style={{ display: visibility}}><NavLink to='/profile'>Profile</NavLink></li>
               <li style={{ display: visibility}}>  |  </li>
               <li style={{ display: visibility}}><NavLink to='/' onClick={ handleLogoutClick }>Logout</NavLink></li>
+              <li style={{ display: visibility}}>  |  </li>
+              <li style={{ display: visibility}}>user : {name}</li>
           </ul>
       </nav>
     )
 }
+
+// <li style={{display:(user)? "visibility" : "none"}}>user : {user.username}</li>
+// <li style={{ display: visibility}}>user : {user.username}</li>
 
 export default NavBar

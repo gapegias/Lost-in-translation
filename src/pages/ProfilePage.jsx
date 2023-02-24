@@ -1,4 +1,3 @@
-import ProfileHeader from "../components/profile/ProfileHeader";
 import withAuth  from "../hoc/withAuth";
 import { useUser } from "../context/UserContext";
 import './Page.css';
@@ -47,7 +46,6 @@ function ProfilePage() {
         <>
             <div className='Page'>
                 <form>
-                    <ProfileHeader username={ user.username } />
                     <span className='ProfileComponents'>
                         <h2>Your translation history </h2>
                         <p style={{display:(translationList.length === 0)? "block" : "none"}}>Try some translations 😃</p>

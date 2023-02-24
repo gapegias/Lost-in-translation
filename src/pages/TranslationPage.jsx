@@ -31,23 +31,19 @@ const TranslationPage = () => {
     const onSubmit = async ({ word })  => {
         const images = []
         const letters = /^[A-Za-z\s]*$/
+        //const letters = /^[A-Za-z]+$/;
         if(word.match(letters)){
             let index = 0;
             let trimFromExtraSpaces = word.split(' ')
                                           .filter(letter => letter !== '')
                                           .join(' ')
+                                          .replaceAll(' ', '@')
+            console.log(trimFromExtraSpaces);
             for(const letter of trimFromExtraSpaces){
                 index++
-                if(letter === ' '){
-                    images.push(<img src={"Images/individial_signs/space.png"} 
+                images.push(<img src={"Images/individial_signs/" + letter.toLowerCase() + ".png"} 
                                  alt={letter + ".png"} 
                                  key={index}/>)
-                }
-                else{
-                   images.push(<img src={"Images/individial_signs/" + letter.toLowerCase() + ".png"} 
-                                    alt={letter + ".png"} 
-                                    key={index}/>)
-                }
             }
             setTranslateWord(images)
             const [ error, updatedUser ] = await translationAdd(user, word)
@@ -64,6 +60,7 @@ const TranslationPage = () => {
         <>
             <div className='Page'>
                 <form onSubmit={handleSubmit(onSubmit)}>
+                    <img src='/Images/Logo-Hello.png' alt="robotLogo-Hello.png" style={{height:250, width: 250, paddingTop: 30}}/>
                     <p>🚨 Text can not contain number or special character</p>
                     <input type='text' placeholder="Type your word here"     
                     onClick={ deleteImagesInChange }           
