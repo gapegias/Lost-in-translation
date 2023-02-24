@@ -64,7 +64,8 @@ to the Translation page
 
 ## **3. Profile page**
 
-<img src="/pictures/profile_page.PNG"> 
+<img src="/pictures/profile_page.PNG">
+
 
 - the profile page must display the last 10 translations for the current user 
 - display only the text of the translation 
